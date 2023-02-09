@@ -49,55 +49,21 @@ const JoditDemo = () => {
             buttons: [
                 'font',
                 'fontsize',
-                // 'source',
                 '|',
                 'bold',
-                // 'strikethrough',
                 'italic',
                 'underline',
-                // '|',
-                // 'ul',
-                // 'ol',
-                // '|',
-                // 'outdent',
-                // 'indent',
-                // '|',
-                // 'brush',
-                // 'paragraph',
-                // '|',
-                // 'image',
-                // 'video',
-                // 'table',
-                // 'link',
                 '|',
                 'align',
                 'undo',
                 'redo',
                 '|',
-                // 'hr',
-                // 'eraser',
-                // 'copyformat',
-                // '|',
-                // 'symbol',
-                // 'fullsize',
-                // 'print',
-                // 'about'
                 'find'
             ],
-            // buttonsXS: [
-            //     'bold',
-            //     'image', '|',
-            //     'brush',
-            //     'paragraph', '|',
-            //     'align', '|',
-            //     'undo', 'redo', '|',
-            //     'eraser',
-            //     'dots'
-            // ],
             events: {},
             textIcons: false,
         });
-        editor.setEditorValue('<p>start</p>')
+        editor.setEditorValue('<p>Initial Text</p>')
     }, [])
     return (
         <div className="container">
