@@ -12,7 +12,7 @@ export const toolbar = {
     // 'emoji',
     // 'image',
     // 'remove',
-    // 'history'
+    'history'
     ],
   inline: {
     // inDropdown: false,
@@ -170,13 +170,19 @@ export const toolbar = {
 //     },
 //   },
 //   remove: { icon: eraser, className: undefined, component: undefined },
-//   history: {
-//     inDropdown: false,
-//     className: undefined,
-//     component: undefined,
-//     dropdownClassName: undefined,
-//     options: ['undo', 'redo'],
-//     undo: { icon: undo, className: undefined },
-//     redo: { icon: redo, className: undefined },
-//   },
+  history: {
+    inDropdown: false,
+    className: undefined,
+    component: undefined,
+    dropdownClassName: undefined,
+    options: ['undo', 'redo'],
+    undo: {
+        // icon: undo,
+        className: undefined
+    },
+    redo: {
+        // icon: redo,
+        className: undefined
+    },
+  },
 }
