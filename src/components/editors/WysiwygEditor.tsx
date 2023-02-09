@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { ContentBlock, Editor, EditorState } from 'react-draft-wysiwyg';
 import { EditorState as DraftEditorState, CompositeDecorator } from 'draft-js';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import { toolbar } from './config';
+import { toolbar } from './WysiwygConfig';
 import Modal from 'react-modal';
-import './App.css';
+import './WysiwygStyle.css';
 
 enum ModalStep {
   CLOSED,
@@ -12,7 +12,7 @@ enum ModalStep {
   REPLACEMODAL
 }
 
-const App = () => {
+const WysiwygEditor = () => {
   const [editorState, setEditorState] = useState<DraftEditorState>()
   const [modalIsOpen, setModalIsOpen] = useState<ModalStep>(ModalStep.CLOSED)
   const [findWord, setFindWord] = useState<EditorState>()
@@ -43,15 +43,7 @@ const App = () => {
   const findWordInEditor = () => {
     if (editorState && findWord) {
       const updateState = DraftEditorState.set(editorState, { decorator: generateDecorator('style') })
-      console.log(updateState)
       setEditorState(updateState)
-      // const updateState = Modifier.replaceText(
-      //   editorState.getCurrentContent(),
-        // editorState.getSelection(),
-      //   findWord.getCurrentContent().getPlainText(),
-      //   editorState.getCurrentInlineStyle(),
-      // )
-      // setEditorState(DraftEditorState.push(editorState, updateState, 'insert-characters'));
     }
   }
   const Find = () => {
@@ -136,4 +128,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default WysiwygEditor;

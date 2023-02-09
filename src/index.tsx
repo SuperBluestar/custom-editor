@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import WysiwygEditor from './components/editors/WysiwygEditor';
 import reportWebVitals from './reportWebVitals';
-import JoditDemo from './JoditDemo';
 
 ReactDOM.render(
   <React.StrictMode>
-    <JoditDemo />
+    <WysiwygEditor />
   </React.StrictMode>,
   document.getElementById("root")
 );
