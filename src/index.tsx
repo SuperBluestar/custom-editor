@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import JoditDemo from './JoditDemo';
+import JoditDemo from './components/editors/JoditDemo';
 
 ReactDOM.render(
   <React.StrictMode>
