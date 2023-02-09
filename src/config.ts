@@ -1,12 +1,12 @@
 export const toolbar = {
   options: [
-    'inline',
-    // 'blockType',
+    // 'inline',
+    'blockType',
     'fontSize',
     'fontFamily',
     // 'list',
     'textAlign',
-    // 'colorPicker',
+    'colorPicker',
     // 'link',
     // 'embedded',
     // 'emoji',

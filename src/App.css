@@ -1,0 +1,14 @@
+.find-wrapper {
+    border: 1px solid gray;
+}
+
+.content-wrapper {
+    border: 1px solid gray;
+}
+
+.modal-input-label {
+    width: 64px;
+}
+.search-and-replace-highlight {
+    background-color: yellow;
+}
