@@ -1,6 +1,7 @@
 import { Jodit } from "jodit";
 import { useEffect } from "react"
 import "jodit/build/jodit.min.css"
+import "./JoditStyle.css"
 
 const JoditDemo = () => {
     useEffect(() => {
