@@ -1,24 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Editor } from 'react-draft-wysiwyg';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import { EditorState } from 'draft-js';
+import { toolbar } from './config';
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+  // const [editorState, setEditorState] = useState<EditorState>()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Rich Text Editor</p>
+      <div>
+        <Editor
+          // editorState={editorState}
+          // onEditorStateChange={setEditorState}
+          // wrapperClassName="demo-wrapper"
+          // editorClassName="demo-editor"
+          // toolbarClassName="toolbar-class"
+          toolbar={toolbar}
+          // mention={{
+          //   separator: ' ',
+          //   trigger: '@',
+          //   suggestions: [
+          //     { text: 'APPLE', value: 'apple', url: 'apple' },
+          //     { text: 'BANANA', value: 'banana', url: 'banana' },
+          //     { text: 'CHERRY', value: 'cherry', url: 'cherry' },
+          //     { text: 'DURIAN', value: 'durian', url: 'durian' },
+          //     { text: 'EGGFRUIT', value: 'eggfruit', url: 'eggfruit' },
+          //     { text: 'FIG', value: 'fig', url: 'fig' },
+          //     { text: 'GRAPEFRUIT', value: 'grapefruit', url: 'grapefruit' },
+          //     { text: 'HONEYDEW', value: 'honeydew', url: 'honeydew' },
+          //   ],
+          // }}
+        />
+      </div>
     </div>
   );
 }
